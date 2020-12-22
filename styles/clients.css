@@ -1,0 +1,20 @@
+/* Styles for clients list */
+main table {
+  width: 100%;
+  padding: 0 5px;
+
+  border-collapse: collapse;
+}
+
+main table tr.interlayer {
+  background-color: #d9d9d9;
+}
+
+main table tr th {
+  text-align: left;
+}
+
+main table tr td {
+  font-size: 15px;
+  padding: 5px 3px;
+}
