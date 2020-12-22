@@ -17,4 +17,10 @@ main table tr th {
 main table tr td {
   font-size: 15px;
   padding: 5px 3px;
+
+  cursor: pointer;
+}
+
+main table tbody tr:hover {
+  background-color: #6d6d6d;
 }

@@ -16,7 +16,7 @@
     </aside>
     <main>
       <table>
-        <tbody id="clients-list">
+        <thead>
           <tr id="list-header">
             <th>Nome</th>
             <th>Email</th>
@@ -24,21 +24,23 @@
             <th>Cidade</th>
             <th>Estado</th>
           </tr>
-          <tr>
+        </thead>
+        <tbody id="clients-list">
+          <tr onclick=(openClientForm())>
             <td>Roque Matheus Gomes Costa</td>
             <td>roquemgcosta@gmail.com</td>
             <td>(19) 93123728</td>
             <td>Hortocity</td>
             <td>SP</td>
           </tr>
-          <tr class="interlayer">
+          <tr onclick=(openClientForm()) class="interlayer">
             <td>Roque Matheus Gomes Costa</td>
             <td>roquemgcosta@gmail.com</td>
             <td>(19) 93123728</td>
             <td>Hortocity</td>
             <td>SP</td>
           </tr>
-          <tr>
+          <tr onclick=(openClientForm())>
             <td>Roque Matheus Gomes Costa</td>
             <td>roquemgcosta@gmail.com</td>
             <td>(19) 93123728</td>

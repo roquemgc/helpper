@@ -60,4 +60,8 @@ function listClients() {
   });
 }
 
+function openClientForm() {
+  window.location.replace('client-registration.html');
+}
+
 
