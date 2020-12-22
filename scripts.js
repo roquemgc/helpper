@@ -64,4 +64,8 @@ function openClientForm() {
   window.location.replace('client-registration.html');
 }
 
+function deleteClient() {
+  alert('teste');
+}
+
 

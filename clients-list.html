@@ -14,7 +14,7 @@
         <li><a href="clients-list.html">Visualizar cadastros</a><li>
       </ul>
     </aside>
-    <main>
+    <main onload="listClients()">
       <table>
         <thead>
           <tr id="list-header">
@@ -23,6 +23,7 @@
             <th>Telefone</th>
             <th>Cidade</th>
             <th>Estado</th>
+            <th>&nbsp;</td>
           </tr>
         </thead>
         <tbody id="clients-list">
@@ -32,6 +33,11 @@
             <td>(19) 93123728</td>
             <td>Hortocity</td>
             <td>SP</td>
+            <td>
+              <button onclick="deleteClient()" title="Deletar cliente">
+                <img src="delete-client.svg" alt="delete" height="20" width="20">
+              </button>
+            </td>
           </tr>
           <tr onclick=(openClientForm()) class="interlayer">
             <td>Roque Matheus Gomes Costa</td>
@@ -39,6 +45,11 @@
             <td>(19) 93123728</td>
             <td>Hortocity</td>
             <td>SP</td>
+            <td>
+              <button onclick="deleteClient()" title="Deletar cliente">
+                <img src="delete-client.svg" alt="delete" height="20" width="20">
+              </button>
+            </td>
           </tr>
           <tr onclick=(openClientForm())>
             <td>Roque Matheus Gomes Costa</td>
@@ -46,6 +57,11 @@
             <td>(19) 93123728</td>
             <td>Hortocity</td>
             <td>SP</td>
+            <td onclick="deleteClient()">
+              <button onclick="deleteClient()" title="Deletar cliente">
+                <img src="delete-client.svg" alt="delete" height="20" width="20">
+              </button>
+            </td>
           </tr>
         </tbody>
       </table>

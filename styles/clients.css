@@ -6,9 +6,18 @@ main table {
   border-collapse: collapse;
 }
 
-main table tr.interlayer {
+main table tbody tr:hover {
   background-color: #d9d9d9;
 }
+
+main table tbody tr:hover button {
+  background-color: #d9d9d9;
+}
+
+main table tbody tr {
+  border-bottom: 1px solid black;
+  z-index: -1;
+} 
 
 main table tr th {
   text-align: left;
@@ -21,6 +30,18 @@ main table tr td {
   cursor: pointer;
 }
 
-main table tbody tr:hover {
-  background-color: #6d6d6d;
+main table tr td button {
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
 }
+
+main table tr td button:hover {
+  background-color: #fff;
+}
+
+
