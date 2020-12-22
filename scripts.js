@@ -1,41 +1,32 @@
-class Student {
+class Client {
   // Objeto que recebe os valores do estudante
-  student = {};
+  client = {};
   // Array que armazena os objetos dos estudantes
-  students = [];
+  clients = [];
 
-  addStudent(student) {
-    this.student['name'] = student[1].value;
-    this.student['ra'] = student[2].value;
-    this.student['email'] = student[3].value;
-    this.student['sex'] = student[4].value;
-    this.student['age'] = student[5].value;
-    this.student['phone'] = student[6].value;
-    this.student['address'] = student[7].value;
-    this.students.push(this.student);
-    this.student = {};
+  addClient(client) {
+    this.client['name'] = client[1].value;
+    this.client['ra'] = client[2].value;
+    this.client['email'] = client[3].value;
+    this.client['sex'] = client[4].value;
+    this.client['age'] = client[5].value;
+    this.client['phone'] = client[6].value;
+    this.client['address'] = client[7].value;
+    this.clients.push(this.client);
+    this.client = {};
   }
 
-  getStudents() {
-    return this.students;
+  getClients() {
+    return this.clients;
   }
 }
 
-student = new Student();
-
-// TimeoutFuncion para que a busca do elemento ocorra somente após o seu carregamento
-setTimeout(() => {
-  const el = document.getElementById('create-student');
-  el.addEventListener('submit', event => {
-    event.preventDefault();
-    student.addStudent(el.elements);
-  })
-}, 0)
+client = new Client();
 
 // Função para buscar todos alunos e carregá-los na tela
-function listStudents() {
-  students = student.getStudents();
-  const list = document.getElementById('student-list');
+function listClients() {
+  clients = client.getClients();
+  const list = document.getElementById('client-list');
 
   // Reseta a lista de estudantes inserindo o cabeçalho novamente
   list.innerHTML = `<tr id="list-header">
@@ -48,8 +39,8 @@ function listStudents() {
       <th>Endereço</th>
     </tr>`;
 
-  // Executa uma função para cada elemento do array students
-  students.forEach((object, index) => {
+  // Executa uma função para cada elemento do array clients
+  clients.forEach((object, index) => {
     var item = Object.entries(object);
     // Cria uma linha na lista
     var i, newLine = document.createElement('tr');
@@ -58,7 +49,7 @@ function listStudents() {
     if(index%2 == 1) {
       newLine.setAttribute('id', 'interlayer'); 
     }
-    // Cria uma coluna para cada item do objeto student e insere na linha
+    // Cria uma coluna para cada item do objeto client e insere na linha
     for(i = 0; i < 7; i++) {
       newLine.innerHTML += `<td>${item[i][1]}</td>`
     }

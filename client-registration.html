@@ -5,18 +5,17 @@
     <title>Cadastro de clientes</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
     <link href="styles/styles.css" rel="stylesheet" >
-
-    <script src="scripts.js"></script>
+    <link href="styles/client-registration.css" rel="stylesheet" >
   </head>
   <body>
     <aside>
       <ul>
         <li><a href="client-registration.html">Cadastrar clientes</a></li>
-        <li><a href="clients.html">Visualizar cadastros</a><li>
+        <li><a href="clients-list.html">Visualizar cadastros</a><li>
       </ul>
     </aside>
     <main>
-      <form id="create-client" name="create-client" >
+      <form id="create-client" name="create-client" onsubmit="addClient()" >
         <fieldset>
           <legend>Cadastrar cliente</legend>
           
@@ -86,5 +85,8 @@
         </div>
       </form>
     </main>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
   </body>
 </html>
