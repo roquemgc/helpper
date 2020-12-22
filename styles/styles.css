@@ -37,20 +37,21 @@ aside ul li a {
 }
 
 main {
-  width: 520px;
-  margin: 15px auto;
+  width: 900px;
+  margin: 15px 0 0 240px;
 
   box-shadow: 1px 1px 3px 4px #e6e6e6;
   background: #FFFFFF; 
 }
 
 main #create-client {
-  width: 520px;
-  padding: 50px 70px;
+  padding: 30px 40px;
 }
 
 main #create-client fieldset {
   border: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 main #create-client fieldset legend {
@@ -64,6 +65,11 @@ main #create-client fieldset legend {
   border-bottom: 1px solid #8FA7B3;
 }
 
+main #create-client fieldset .input-wrapper {
+  border-left: 1px solid #D3E2E5;
+  padding: 15px;
+  width: 45%;
+}
 
 main #create-client .input-block + .input-block {
   margin-top: 12px;
@@ -75,7 +81,8 @@ main #create-client .input-block label {
   margin-bottom: 5px;
 }
 
-main #create-client .input-block input, select {
+main #create-client .input-block select,
+main #create-client .input-block input {
   height: 35px;
   width: 100%;
   padding: 0 16px;
